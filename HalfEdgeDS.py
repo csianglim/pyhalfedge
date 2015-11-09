@@ -1,4 +1,3 @@
-import param
 import math
 
 # A mesh contains:
@@ -396,15 +395,6 @@ class Edge:
     if self.second.cell == None or self.first.cell == None:
       return True
     return False  
-
-  def setBaz(self, baz):
-    self.baz = baz
-  def setMyo(self, myo):
-    self.myo = myo
-  def setShroom(self, shrm):
-    self.shroom = shrm
-  def setRok(self, rok):
-    self.rok = rok
 
   def getLength(self):
     v1 = self.first.vertex
